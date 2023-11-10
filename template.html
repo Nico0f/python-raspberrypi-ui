@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Minimal Web Page</title>
+    <style>
+      .main-body {
+        @font-face {
+          font-family: "Geist";
+          src: url("./Geist/Geist-Regular.woff2") format("woff2"),
+            /* Add each font variant */ url("./Geist/Geist-Bold.woff2")
+              format("woff2"),
+            url("./Geist/Geist-Light.woff2") format("woff2");
+          font-weight: normal; /* You may specify the font-weight if needed */
+          font-style: normal; /* You may specify the font-style if needed */
+        }
+        font-family: "Geist", sans-serif;
+        height: 100vh; /* Optional: Set the height of the grid to fill the viewport */
+      }
+      .calendar-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(rows_to_change, 1fr);
+        gap: 1px; /* Optional: Adds some spacing between grid items */
+        background-color: gray;
+        padding: 0px 1px 0px 1px;
+        height: 100%;
+      }
+      .day-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px; /* Optional: Adds some spacing between grid items */
+        text-align: center;
+        font-size: 22px;
+      }
+      .day-cell {
+        /* background-color: black; */
+        /* color: white; */
+        margin-bottom: 5px;
+      } /* Optional: Add some styling to the grid items */
+      .div-cell {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-size: 17px;
+        text-align: end;
+      }
+      .div-cell-inactive {
+        background-color: #686868;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        font-size: 17px;
+        text-align: end;
+      }
+      .div-upper-part {
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+      }
+      .div-upper-part-date {
+        display: flex;
+        align-items: end;
+      }
+      .date-container {
+        display: flex;
+        align-items: end;
+      }
+      .div-upper-part-tasks {
+        display: flex;
+        align-items: end;
+      }
+      .tasks-container {
+        height: 100%;
+        width: 100%;
+        border: black solid 1px;
+      }
+    </style>
+  </head>
+  <body class="main-body">
+    <div class="div-upper-part">
+      <div class="div-upper-part-date">
+        <div class="date-container">
+            <h1>November</h1>
+            <h2>2023</h2>
+        </div>
+      </div>
+      <div class=" .div-upper-part-tasks">
+        <div class="tasks-container">
+
+        </div>
+      </div>
+      <div>Weather</div>
+    </div>
+    <div class="day-body">
+      <span class="day-cell">Domingo</span><span class="day-cell">Lunes</span
+      ><span class="day-cell">Martes</span
+      ><span class="day-cell">Miércoles</span
+      ><span class="day-cell">Jueves</span><span class="day-cell">Viernes</span
+      ><span class="day-cell">Sábado</span>
+    </div>
+    <div class="calendar-body">calendar_body</div>
+  </body>
+</html>

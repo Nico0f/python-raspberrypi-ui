@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Minimal Web Page</title>
+    <style>
+      .main-body {
+        height: 100vh; /* Optional: Set the height of the grid to fill the viewport */
+      }
+
+      .calendar-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        gap: 5px; /* Optional: Adds some spacing between grid items */
+        height: 100%;
+      }
+
+      .day-body {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 5px; /* Optional: Adds some spacing between grid items */
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .day-cell {
+        background-color: black;
+        color: white;
+        margin-bottom: 5px;
+      }
+
+      /* Optional: Add some styling to the grid items */
+      .div-cell {
+        background-color: #f0f0f0;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        text-align: end;
+      }
+
+      .div-cell-inactive {
+        background-color: #686868;
+        padding: 10px;
+        text-align: center;
+        font-size: 20px;
+        text-align: end;
+      }
+    </style>
+  </head>
+  <body class="main-body">
+    <div style="height: 200px">UPPER PART</div>
+    <div class="day-body">
+      <span class="day-cell">Domingo</span>
+      <span class="day-cell">Lunes</span>
+      <span class="day-cell">Martes</span>
+      <span class="day-cell">Miércoles</span>
+      <span class="day-cell">Jueves</span>
+      <span class="day-cell">Viernes</span>
+      <span class="day-cell">Sábado</span>
+    </div>
+    <div class="calendar-body">
+      <div class="div-cell">1</div>
+      <div class="div-cell">2</div>
+      <div class="div-cell">3</div>
+      <div class="div-cell">4</div>
+      <div class="div-cell">5</div>
+      <div class="div-cell">6</div>
+      <div class="div-cell">7</div>
+      <div class="div-cell">8</div>
+      <div class="div-cell">9</div>
+      <div class="div-cell">10</div>
+      <div class="div-cell">11</div>
+      <div class="div-cell">12</div>
+      <div class="div-cell">13</div>
+      <div class="div-cell">14</div>
+      <div class="div-cell">15</div>
+      <div class="div-cell">16</div>
+      <div class="div-cell">17</div>
+      <div class="div-cell">18</div>
+      <div class="div-cell">19</div>
+      <div class="div-cell">20</div>
+      <div class="div-cell">21</div>
+      <div class="div-cell">22</div>
+      <div class="div-cell">23</div>
+      <div class="div-cell">24</div>
+      <div class="div-cell">25</div>
+      <div class="div-cell">26</div>
+      <div class="div-cell">27</div>
+      <div class="div-cell">28</div>
+      <div class="div-cell">29</div>
+      <div class="div-cell">30</div>
+      <div class="div-cell">31</div>
+      <div class="div-cell">32</div>
+      <div class="div-cell">33</div>
+      <div class="div-cell">34</div>
+      <div class="div-cell">35</div>
+      <div class="div-cell">36</div>
+      <div class="div-cell">37</div>
+      <div class="div-cell">38</div>
+      <div class="div-cell">39</div>
+      <div class="div-cell">40</div>
+      <div class="div-cell">41</div>
+      <div class="div-cell">42</div>
+    </div>
+  </body>
+</html>

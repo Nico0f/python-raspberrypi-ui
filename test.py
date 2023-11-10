@@ -1,0 +1,10 @@
+def main():
+    f = open('test.html', 'r')
+    file = f.read()
+    f.close()
+    parsed_file = file.replace('\n', '')
+    print(file)
+    s = open('parsed.html', 'w')
+    s.write(parsed_file)
+    s.close()
+main()
